@@ -45,6 +45,7 @@ def setup_driver():
     driver.implicitly_wait(5)
     return driver
 
+
 # Function to start the app
 def start_app(driver):
     """
