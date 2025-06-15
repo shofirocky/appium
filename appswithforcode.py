@@ -6,12 +6,12 @@ from appium.webdriver.common.touch_action import TouchAction
 desired_caps = {}
 desired_caps['platformName'] = 'Android'
 desired_caps['deviceName'] = 'Android'
-desired_caps['appPackage'] = 'net.one97.paytm'
-desired_caps['appActivity'] = '.landingpage.activity.AJRMainActivity'
+desired_caps['appPackage'] = 'com.google.android.apps.tasks'
+desired_caps['appActivity'] = '.ui.TaskListsActivity'
  
 driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 driver.implicitly_wait(10)
-driver.find_element_by_id('net.one97.paytm:id/et_registered_mobile').click()
+driver.find_element_by_id('com.google.android.apps.tasks:id/welcome_get_started').click()
 driver.press_keycode(16)
 driver.press_keycode(14)
 driver.press_keycode(8)
